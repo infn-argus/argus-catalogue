@@ -1,0 +1,13 @@
+id: it-classification
+version: 0.1.0
+name: ARGUS metadata for IT devices
+description: >-
+  What ARGUS says about IT devices whose physical definition is a NetBox device type
+  (infn-argus/devicetype-library): device class and the ARGUS type of their units. Never their specifications.
+domain: catalogue
+owner: INFN ARGUS
+license: CC0-1.0
+requires:
+  packages: {core-objects: ">=2.1,<3", it: ">=1.1,<2", accelerator: ">=1.0"}
+  collections: {vendors: ">=0.2,<1"}
+contents: [classifications.yaml]

@@ -1,0 +1,10 @@
+# Keyed by the id ARGUS gives a NetBox device type: the vendor's id and the slug without the manufacturer's prefix.
+classifications:
+  - {id: moxa/nport-5250a, device_class: converter, instance_type: Serial Converter}
+  - {id: moxa/nport-5410, device_class: converter, instance_type: Serial Converter}
+  - {id: moxa/nport-5450, device_class: converter, instance_type: Serial Converter}
+  - {id: moxa/nport-5650-8, device_class: converter, instance_type: Serial Converter}
+  - {id: moxa/nport-5650-16, device_class: converter, instance_type: Serial Converter}
+  - {id: basler/a2a1920-51gmbas, device_class: camera, instance_type: Camera}
+  - {id: basler/a2a2600-20gmbas, device_class: camera, instance_type: Camera}
+  - {id: basler/sca640-70gm, device_class: camera, instance_type: Camera}
