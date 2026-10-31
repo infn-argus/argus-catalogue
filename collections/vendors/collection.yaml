@@ -1,0 +1,13 @@
+id: vendors
+version: 0.1.0
+name: Manufacturers
+description: >-
+  Every manufacturer, once. Domain collections, and the NetBox device types ARGUS imports, name their vendor by
+  the id given here (NetBox's manufacturer names are aliases), so IT and accelerator models share one entry
+  per company.
+domain: catalogue
+owner: INFN ARGUS
+license: CC0-1.0
+requires:
+  packages: {core-objects: ">=2.1,<3"}
+contents: [vendors.yaml]

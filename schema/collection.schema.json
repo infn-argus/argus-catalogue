@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/infn-argus/argus-catalogue/schema/collection.schema.json",
+  "title": "ARGUS catalogue: collection.yaml",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "name",
+    "domain",
+    "owner",
+    "license",
+    "contents"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string",
+      "description": "an ARGUS package id, or catalogue"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "requires": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "packages": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "collections": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\.ya?ml$"
+      }
+    }
+  }
+}

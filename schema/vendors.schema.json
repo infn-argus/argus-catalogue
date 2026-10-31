@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/infn-argus/argus-catalogue/schema/vendors.schema.json",
+  "title": "ARGUS catalogue: manufacturers",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "vendors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "other spellings, legal forms, and the NetBox manufacturer name"
+          },
+          "website": {
+            "type": "string",
+            "pattern": "^https?://\\S+$"
+          },
+          "country": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "description": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "ref"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "netbox-devicetype-library",
+                    "datasheet",
+                    "manufacturer-page",
+                    "argus-export",
+                    "other"
+                  ]
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "the document, page or file checked"
+                },
+                "revision": {
+                  "type": "string"
+                },
+                "checked": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "retired": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "since",
+              "reason"
+            ],
+            "properties": {
+              "since": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "replaced_by": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9.+-]*$"
+              }
+            }
+          },
+          "transferred_from": {
+            "type": "string"
+          },
+          "former_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "moved": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "moved_to"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "moved_to": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          }
+        }
+      }
+    }
+  }
+}

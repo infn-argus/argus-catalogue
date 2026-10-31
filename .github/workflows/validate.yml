@@ -1,0 +1,55 @@
+# Every pull request and release is checked with the ARGUS validator (app/catalogue in argus-knowledge-hub):
+# keys, references, one entry per model and per company across all collections, and — against the previous
+# release tag — that nothing disappeared without being retired or moved, and that changed collections have a
+# new version.
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      ARGUS_REF: main            # the ARGUS release whose validator applies
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: catalogue
+      - uses: actions/checkout@v4
+        with:
+          repository: infn-argus/argus-knowledge-hub
+          ref: ${{ env.ARGUS_REF }}
+          path: argus
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install the ARGUS backend
+        run: |
+          sudo apt-get update && sudo apt-get install -y libkrb5-dev
+          pip install -r argus/backend/requirements.txt
+      - name: The previous release, to compare with
+        id: previous
+        working-directory: catalogue
+        run: |
+          tag=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || true)
+          if [ -n "$tag" ]; then
+            git worktree add ../previous "$tag"
+            echo "dir=$GITHUB_WORKSPACE/previous/collections" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Validate
+        working-directory: argus/backend
+        env:
+          # The validator imports the app; it never connects to a database.
+          DATABASE_URL: postgresql://validator@localhost/none
+          ARGUS_CATALOGUE_DIR: ${{ github.workspace }}/catalogue/collections
+        run: |
+          if [ -n "${{ steps.previous.outputs.dir }}" ]; then
+            python -m app.catalogue validate --against "${{ steps.previous.outputs.dir }}"
+          else
+            python -m app.catalogue validate
+          fi

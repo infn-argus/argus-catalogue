@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/infn-argus/argus-catalogue/schema/models.schema.json",
+  "title": "ARGUS catalogue: a collection's models (and moved entries)",
+  "description": "Mirrors the ARGUS validator (app/catalogue/validate.py), which is the authority: it also checks references, duplicates across collections and releases.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "vendor",
+          "model_code",
+          "name",
+          "device_class"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9.+-]*$"
+          },
+          "vendor": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "model_code": {
+            "type": "string",
+            "minLength": 1,
+            "description": "as the manufacturer writes it"
+          },
+          "part_number": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 500,
+            "description": "our own words: never the manufacturer's text"
+          },
+          "device_class": {
+            "enum": [
+              "adc",
+              "bpm",
+              "cable",
+              "camera",
+              "chassis",
+              "converter",
+              "desktop computer",
+              "io",
+              "ion pump controller",
+              "laser",
+              "modulator",
+              "monitor",
+              "motion controller",
+              "motor",
+              "nas",
+              "network switch",
+              "plasma",
+              "power supply",
+              "rf",
+              "server",
+              "timing",
+              "vacuum",
+              "vacuum chamber"
+            ]
+          },
+          "instance_type": {
+            "type": "string",
+            "description": "the ARGUS object type its units are"
+          },
+          "specifications": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^[a-z][a-z0-9_]*$"
+            },
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  }
+                },
+                {
+                  "type": "object",
+                  "propertyNames": {
+                    "pattern": "^[a-z][a-z0-9_]*$"
+                  },
+                  "additionalProperties": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "datasheet_url": {
+            "type": "string",
+            "pattern": "^https?://\\S+$"
+          },
+          "eol_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "firmware_version": {
+            "type": "string"
+          },
+          "typical_spares": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "verb",
+                "model"
+              ],
+              "properties": {
+                "verb": {
+                  "enum": [
+                    "successor-of",
+                    "compatible-with",
+                    "accessory-of"
+                  ]
+                },
+                "model": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9.+-]*$"
+                }
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "ref"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "netbox-devicetype-library",
+                    "datasheet",
+                    "manufacturer-page",
+                    "argus-export",
+                    "other"
+                  ]
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "the document, page or file checked"
+                },
+                "revision": {
+                  "type": "string"
+                },
+                "checked": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "retired": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "since",
+              "reason"
+            ],
+            "properties": {
+              "since": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "replaced_by": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9.+-]*$"
+              }
+            }
+          },
+          "transferred_from": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "former_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9.+-]*$"
+            }
+          }
+        }
+      }
+    },
+    "moved": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "moved_to"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "moved_to": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          }
+        }
+      }
+    }
+  }
+}
