@@ -1,0 +1,84 @@
+models:
+- id: beckhoff/kl2541
+  vendor: beckhoff
+  model_code: KL2541
+  name: KL2541
+  device_class: motion controller
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: faulhaber/am-1524
+  vendor: faulhaber
+  model_code: AM 1524
+  name: AM 1524
+  device_class: motor
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: phytron/vss43.200-2.5-hv
+  vendor: phytron
+  model_code: VSS43.200-2.5-HV
+  name: VSS43.200-2.5-HV
+  device_class: motor
+  instance_type: Motor Axis
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: phytron/vss57.200-2.5-hv
+  vendor: phytron
+  model_code: VSS57.200-2.5-HV
+  name: VSS57.200-2.5-HV
+  device_class: motor
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: thorlabs/kdc101
+  vendor: thorlabs
+  model_code: KDC101
+  name: KDC101
+  device_class: motion controller
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: thorlabs/kim101
+  vendor: thorlabs
+  model_code: KIM101
+  name: KIM101
+  device_class: motion controller
+  instance_type: Motion Controller
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: thorlabs/piak10vf
+  vendor: thorlabs
+  model_code: PIAK10VF
+  name: PIAK10VF
+  device_class: motor
+  instance_type: Motor Axis
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: thorlabs/z912v
+  vendor: thorlabs
+  model_code: Z912V
+  name: Z912V
+  device_class: motor
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.

@@ -1,0 +1,203 @@
+models:
+- id: agilent/4uhv
+  vendor: agilent
+  model_code: 4UHV
+  name: 4UHV Ion Pump Controller
+  device_class: ion pump controller
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: agilent/idp-15
+  vendor: agilent
+  model_code: IDP-15
+  name: IDP-15
+  device_class: vacuum
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: agilent/ipcmini
+  vendor: agilent
+  model_code: IPCmini
+  name: IPCmini
+  device_class: ion pump controller
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: agilent/twistorr-305-fs
+  vendor: agilent
+  model_code: TwisTorr 305 FS
+  name: TwisTorr 305 FS
+  device_class: vacuum
+  instance_type: Turbo Pump
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: agilent/xgs-600
+  vendor: agilent
+  model_code: XGS-600
+  name: XGS-600 Gauge Controller
+  device_class: vacuum
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: edwards/xds35i
+  vendor: edwards
+  model_code: XDS35i
+  name: XDS35i
+  device_class: vacuum
+  instance_type: Primary Pump
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/a604h
+  vendor: pfeiffer-vacuum
+  model_code: A604H
+  name: A604H
+  device_class: vacuum
+  instance_type: Primary Pump
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/ath-2303-m
+  vendor: pfeiffer-vacuum
+  model_code: ATH 2303 M
+  name: ATH 2303 M
+  device_class: vacuum
+  instance_type: Turbo Pump
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/ath-500-m
+  vendor: pfeiffer-vacuum
+  model_code: ATH 500 M
+  name: ATH 500 M
+  device_class: vacuum
+  instance_type: Turbo Pump
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/cmr-364
+  vendor: pfeiffer-vacuum
+  model_code: CMR 364
+  name: CMR 364
+  device_class: vacuum
+  instance_type: Vacuum Gauge
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/ikr-251
+  vendor: pfeiffer-vacuum
+  model_code: IKR 251
+  name: IKR 251
+  device_class: vacuum
+  instance_type: Vacuum Gauge
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/pkr-251
+  vendor: pfeiffer-vacuum
+  model_code: PKR 251
+  name: PKR 251
+  device_class: vacuum
+  instance_type: Vacuum Gauge
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/tpg-366
+  vendor: pfeiffer-vacuum
+  model_code: TPG 366
+  name: TPG 366 control unit
+  device_class: vacuum
+  instance_type: Vacuum Gauge
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pfeiffer-vacuum/tpr-270
+  vendor: pfeiffer-vacuum
+  model_code: TPR 270
+  name: TPR 270
+  device_class: vacuum
+  instance_type: Vacuum Gauge
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: smc/hrs024-af-20
+  vendor: smc
+  model_code: HRS024-AF-20
+  name: HRS024-AF-20
+  device_class: vacuum
+  instance_type: Chiller
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: vat/10846-pe01
+  vendor: vat
+  model_code: 10846-PE01
+  name: 10846-PE01
+  device_class: vacuum
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: vat/11140-ce44
+  vendor: vat
+  model_code: 11140-CE44
+  name: 11140-CE44
+  device_class: vacuum
+  instance_type: Vacuum Valve
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: vat/11146-pe44
+  vendor: vat
+  model_code: 11146-PE44
+  name: 11146-PE44
+  device_class: vacuum
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: vat/12146-pa44
+  vendor: vat
+  model_code: 12146-PA44
+  name: 12146-PA44
+  device_class: vacuum
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.

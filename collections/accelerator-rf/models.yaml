@@ -1,0 +1,11 @@
+models:
+- id: instrumentation-technologies/libera-llrf
+  vendor: instrumentation-technologies
+  model_code: Libera LLRF
+  name: Libera LLRF
+  device_class: rf
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.

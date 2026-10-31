@@ -21,8 +21,12 @@ of the ARGUS repository.
   evidence each value comes from.
 - **Never:** serial numbers, inventory numbers, installed units, locations, sellers, prices, contracts, people,
   or any other site data. The validator refuses keys it does not know, so there is nowhere to put them.
-- **No invented values.** Every model cites the manufacturer document its values were checked against
+- **No invented values.** A model's specifications cite the manufacturer document they were checked against
   (`sources`, with the date). A value that cannot be checked is left out.
+- **Identity first.** The first entries carry only what identifies a product — manufacturer, model code, name,
+  device class — taken from the records of the INFN installation that uses them, with a source note saying
+  their specifications are not yet verified. Specifications are added entry by entry, from the manufacturer's
+  datasheet, and the note goes. [`VERIFICATION.md`](VERIFICATION.md) lists what is still waiting.
 
 ## Layout
 

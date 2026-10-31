@@ -1,0 +1,51 @@
+models:
+- id: caen-els/easy-driver
+  vendor: caen-els
+  model_code: Easy-Driver
+  name: Easy-Driver
+  device_class: power supply
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: caen-els/fast-ps
+  vendor: caen-els
+  model_code: FAST-PS
+  name: FAST-PS
+  device_class: power supply
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: caen-els/histar
+  vendor: caen-els
+  model_code: HiStar
+  name: HiStar
+  device_class: power supply
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: parker/009-1669-900
+  vendor: parker
+  model_code: 009-1669-900
+  name: Elettrovalvola 009-1669-900
+  device_class: plasma
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: parker/iota-one
+  vendor: parker
+  model_code: Iota One
+  name: Iota One
+  device_class: plasma
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.

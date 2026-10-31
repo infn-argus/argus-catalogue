@@ -1,2 +1,136 @@
-# Manufacturers are added with their first verified model (README: "No invented values").
-vendors: []
+# Names are the manufacturers' brands; aliases are the spellings INFN's records and NetBox use.
+vendors:
+- id: agilent
+  name: Agilent Technologies
+  aliases:
+  - Agilent
+  - AGILENT TECHNOLOGIES ITALIA S.P.A.
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: basler
+  name: Basler
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: beckhoff
+  name: Beckhoff
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: caen-els
+  name: CAEN ELS
+  aliases:
+  - Caenels
+  - CAENels
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: edwards
+  name: Edwards
+  aliases:
+  - EDWARDS
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: faulhaber
+  name: Faulhaber
+  aliases:
+  - FAULHABER
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: icp-das
+  name: ICP DAS
+  aliases:
+  - ICPDAS
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: instrumentation-technologies
+  name: Instrumentation Technologies
+  aliases:
+  - INSTRUMENTATION TECHNOLOGIES DD
+  - I-Tech
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: moxa
+  name: Moxa
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: mrf
+  name: Micro-Research Finland
+  aliases:
+  - MRF
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: parker
+  name: Parker Hannifin
+  aliases:
+  - Parker
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: pfeiffer-vacuum
+  name: Pfeiffer Vacuum
+  aliases:
+  - Pfeiffer Vacuum Components & Solutions GmbH
+  - Pfeiffer
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: phytron
+  name: Phytron
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: pulse-research-lab
+  name: Pulse Research Lab
+  aliases:
+  - pulseresearchlab
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: red-pitaya
+  name: Red Pitaya
+  aliases:
+  - redpitaya
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: smc
+  name: SMC
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: thorlabs
+  name: Thorlabs
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+- id: vat
+  name: VAT
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31

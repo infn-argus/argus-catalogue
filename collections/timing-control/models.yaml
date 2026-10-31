@@ -1,0 +1,101 @@
+models:
+- id: icp-das/et-7026
+  vendor: icp-das
+  model_code: ET-7026
+  name: ET-7026
+  device_class: io
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: icp-das/et-7060
+  vendor: icp-das
+  model_code: ET-7060
+  name: ET-7060
+  device_class: io
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: icp-das/et-7215
+  vendor: icp-das
+  model_code: ET-7215
+  name: ET-7215
+  device_class: io
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: icp-das/et-7218z
+  vendor: icp-das
+  model_code: ET-7218Z
+  name: ET-7218Z
+  device_class: io
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: icp-das/et-7226
+  vendor: icp-das
+  model_code: ET-7226
+  name: ET-7226
+  device_class: io
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: mrf/mtca-evm-300
+  vendor: mrf
+  model_code: mTCA-EVM-300
+  name: mtca-evm-300
+  device_class: timing
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: mrf/mtca-evr-300u
+  vendor: mrf
+  model_code: mTCA-EVR-300U
+  name: mtca-evr-300u
+  device_class: timing
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: mrf/pxi-evg-230
+  vendor: mrf
+  model_code: PXI-EVG-230
+  name: pxi-evg-230
+  device_class: timing
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: mrf/pxi-evr-230
+  vendor: mrf
+  model_code: PXI-EVR-230
+  name: pxi-evr-230
+  device_class: timing
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: pulse-research-lab/prl-2572
+  vendor: pulse-research-lab
+  model_code: PRL-2572
+  name: prl-2572
+  device_class: timing
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.

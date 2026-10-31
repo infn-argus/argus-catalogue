@@ -1,0 +1,71 @@
+models:
+- id: instrumentation-technologies/libera-brilliance
+  vendor: instrumentation-technologies
+  model_code: Libera Brilliance
+  name: Libera Brilliance
+  device_class: bpm
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: instrumentation-technologies/libera-brilliance-single-pass
+  vendor: instrumentation-technologies
+  model_code: Libera Brilliance Single Pass
+  name: Libera Brilliance Single Pass
+  device_class: bpm
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: instrumentation-technologies/libera-single-pass-e
+  vendor: instrumentation-technologies
+  model_code: Libera Single Pass E
+  name: Libera Single Pass E
+  device_class: bpm
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: instrumentation-technologies/libera-spark-erxr
+  vendor: instrumentation-technologies
+  model_code: Libera Spark ERXR
+  name: Libera Spark ERXR
+  device_class: bpm
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: instrumentation-technologies/libera-spark-hl
+  vendor: instrumentation-technologies
+  model_code: Libera Spark HL
+  name: Libera Spark HL
+  device_class: bpm
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: instrumentation-technologies/libera-spark-hr
+  vendor: instrumentation-technologies
+  model_code: Libera Spark HR
+  name: Libera Spark HR
+  device_class: bpm
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: red-pitaya/125-14
+  vendor: red-pitaya
+  model_code: 125-14
+  name: STEMlab 125-14
+  device_class: adc
+  sources:
+  - kind: other
+    ref: INFN shared catalogue (ARGUS)
+    checked: 2026-10-31
+    note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
