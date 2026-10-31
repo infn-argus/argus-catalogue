@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v0.1.0 — 2026-10-31
+
+- it-classification: ARGUS metadata for the Moxa NPort and Basler camera device types INFN uses.
 
 - 50 accelerator models in six collections (vacuum, motion, accelerator-diagnostics, accelerator-power,
   accelerator-rf, timing-control), identity only: specifications to be verified (VERIFICATION.md).
