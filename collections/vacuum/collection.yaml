@@ -1,8 +1,8 @@
 id: vacuum
-version: 0.1.0
+version: 0.1.1
 name: 'Vacuum: pumps, gauges, valves and their controllers'
 description: Identity of the models INFN uses; specifications are added as each is verified.
-domain: catalogue
+domain: vacuum-cryo
 owner: INFN ARGUS
 license: CC0-1.0
 requires:

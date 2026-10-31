@@ -1,8 +1,8 @@
 id: timing-control
-version: 0.1.0
+version: 0.1.1
 name: Timing and I/O
 description: Identity of the models INFN uses; specifications are added as each is verified.
-domain: catalogue
+domain: accelerator
 owner: INFN ARGUS
 license: CC0-1.0
 requires:

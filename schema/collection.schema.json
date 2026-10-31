@@ -28,8 +28,19 @@
       "type": "string"
     },
     "domain": {
-      "type": "string",
-      "description": "an ARGUS package id, or catalogue"
+      "description": "the ARGUS package (or packages) whose workspaces its models are offered to; catalogue: every workspace",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      ]
     },
     "owner": {
       "type": "string"

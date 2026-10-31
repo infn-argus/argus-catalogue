@@ -40,6 +40,10 @@ schema/                     the format as JSON Schema, for editors
 .github/workflows/          CI: the ARGUS validator, on every pull request and release
 ```
 
+Each collection's `domain` names the ARGUS packages whose workspaces its models are offered to — one package
+id or a list (`[accelerator, optics-alignment]`); `catalogue` means every workspace (the vendors). A workspace's
+model picker shows the models of its domains first, and every model on request.
+
 ## Identity
 
 - A vendor id is a slug (`pfeiffer-vacuum`). A model id is `vendor/model-slug` (`pfeiffer-vacuum/tpg-366`).

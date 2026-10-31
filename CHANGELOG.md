@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.0 — unreleased
+
+- Every collection names its domain: the ARGUS packages whose workspaces its models are offered to
+  (accelerator-diagnostics, accelerator-power, accelerator-rf and timing-control: accelerator; motion:
+  accelerator and optics-alignment; vacuum: vacuum-cryo; it-classification: it; vendors stay for every workspace).
+  Each collection's patch version is raised; no entry changed. Needs ARGUS 1.35.59 or later to validate.
+
 ## v0.1.0 — 2026-10-31
 
 - it-classification: ARGUS metadata for the Moxa NPort and Basler camera device types INFN uses.
