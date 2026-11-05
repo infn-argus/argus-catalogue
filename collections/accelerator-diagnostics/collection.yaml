@@ -1,5 +1,5 @@
 id: accelerator-diagnostics
-version: 0.1.1
+version: 0.1.2
 name: Beam diagnostics and acquisition
 description: Identity of the models INFN uses; specifications are added as each is verified.
 domain: accelerator

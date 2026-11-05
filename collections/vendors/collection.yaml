@@ -1,5 +1,5 @@
 id: vendors
-version: 0.2.0
+version: 0.2.1
 name: Manufacturers
 description: >-
   Every manufacturer, once. Domain collections, and the NetBox device types ARGUS imports, name their vendor by
