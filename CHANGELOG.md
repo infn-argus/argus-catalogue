@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.0 — 2026-11-05
+
+- Add Keysight 34465A (keysight/34465a)
+
 ## v0.2.0 — 2026-10-31
 
 - Every collection names its domain: the ARGUS packages whose workspaces its models are offered to
