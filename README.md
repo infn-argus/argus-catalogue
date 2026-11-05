@@ -60,11 +60,24 @@ Each release is a tag `vX.Y.Z`, with its changes in `CHANGELOG.md`. A collection
 its content changes. ARGUS pins a release by tag and commit, and records each collection's checksum when it
 installs it; an upgrade is previewed, and a value a site keeps locally is never overwritten.
 
+Releases are made by CI (`.github/workflows/release.yml`): each merge to `main` that changes `collections/` is
+validated, then tagged — a minor version when a collection or an entry was added, a patch otherwise — with its
+CHANGELOG section (an "unreleased" section written by hand is kept and dated; otherwise the commits' subjects).
+Set the repository variable `AUTO_RELEASE` to `false` to release by hand from the Actions tab.
+
+In ARGUS, a catalogue maintainer pins the new release on *Administration › Catalogue* (ARGUS checks it with its
+validator first), then previews and installs the collections it upgrades. No ARGUS release is needed.
+
 ## Contributing an entry
 
 1. Add the vendor to `collections/vendors/vendors.yaml` if it is not there.
 2. Add the model to the collection of its domain, with `sources` naming the manufacturer document checked.
 3. Open a pull request: CI validates it with the ARGUS validator, together with the previous release.
+
+Or from ARGUS: a model made by hand in the catalogue has *Propose for the catalogue* on its page. ARGUS writes the
+entry (and the vendor, when it is new), raises the collection's version, checks the files with its validator and
+opens the pull request, naming who proposed it. When the release carrying it is installed, ARGUS links the record
+it came from to the entry.
 
 A correction found in ARGUS (a site that knows a value is wrong) arrives as a patch against the entry's file,
 for the same review.
