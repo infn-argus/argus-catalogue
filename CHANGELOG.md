@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.2.0 — unreleased
+## v0.2.0 — 2026-10-31
 
 - Every collection names its domain: the ARGUS packages whose workspaces its models are offered to
   (accelerator-diagnostics, accelerator-power, accelerator-rf and timing-control: accelerator; motion:
