@@ -59,6 +59,15 @@ models:
     ref: INFN shared catalogue (ARGUS)
     checked: 2026-10-31
     note: Identity from INFN's records; specifications not yet verified against the manufacturer's documentation.
+- id: keysight/34465a
+  vendor: keysight
+  model_code: 34465A
+  name: 34465A
+  device_class: multimeter
+  sources:
+  - kind: datasheet
+    ref: https://www.keysight.com/us/en/product/34465A/digital-multimeter-6-5-digit-truevolt-dmm.html
+    checked: 2026-11-05
 - id: red-pitaya/125-14
   vendor: red-pitaya
   model_code: 125-14

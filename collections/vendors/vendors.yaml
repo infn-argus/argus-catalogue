@@ -63,6 +63,12 @@ vendors:
   - kind: other
     ref: INFN shared catalogue (ARGUS)
     checked: 2026-10-31
+- id: keysight
+  name: Keysight
+  sources:
+  - kind: other
+    ref: ARGUS record 9f919227-e1c2-48e6-abad-5fdb14de4969
+    checked: 2026-11-05
 - id: moxa
   name: Moxa
   sources:
